@@ -5,6 +5,14 @@ export default {
   router: {
     base: '/NuxtBlog/'
   },
+  build: {
+    /*
+    ** You can extend webpack config here
+    */
+    extend (config, ctx) {
+    },
+    publicPath: 'https://posokhin.github.io/NuxtBlog/'
+  },
   /*
   ** Headers of the page
   */
@@ -70,11 +78,4 @@ export default {
   /*
   ** Build configuration
   */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  }
 }
